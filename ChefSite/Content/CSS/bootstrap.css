@@ -4021,8 +4021,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
   position: relative;
   z-index: 1000;
   min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
 }
 
 .navbar:before,
@@ -4045,6 +4043,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
   clear: both;
 }
 
+.navbar > .container {
+    width: 600px;
+}
+ 
 @media (min-width: 768px) {
   .navbar {
     border-radius: 4px;
