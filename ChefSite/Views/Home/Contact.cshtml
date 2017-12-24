@@ -1,1 +1,106 @@
-﻿
+﻿@model  ChefSite.Models.ContactViewModel
+
+@using (Html.BeginForm("SendContact", "Home", FormMethod.Post, new { @class = "cateringContactForm", role = "form" }))
+{
+    <div class="jumbotron contactPage">
+        <table>
+            <tr>
+                <th class="label">
+                    @Html.LabelFor(m => m.FirstName)
+                </th>
+                <th class="field">
+                    @Html.TextBoxFor(m => m.FirstName, new { @type = "text" })
+                </th>
+            </tr>
+            <tr>
+                <th class="label">
+                    @Html.LabelFor(m => m.LastName)
+                </th>
+                <th class="field">
+                    @Html.TextBoxFor(m => m.LastName, new { @type = "text" })
+                </th>
+            </tr>
+            <tr>
+                <th class="label">
+                    @Html.LabelFor(m => m.PhoneNumber)
+                </th>
+                <th class="field">
+                    @Html.TextBoxFor(m => m.PhoneNumber, new { @type = "phone" })
+                </th>
+            </tr>
+            <tr>
+                <th class="label">
+                    @Html.LabelFor(m => m.EmailAddress)
+                </th>
+                <th class="field">
+                    @Html.TextBoxFor(m => m.EmailAddress, new { @type = "email" })
+                </th>
+            </tr>
+            <tr>
+                <th class="label">
+                    @Html.LabelFor(m => m.PhoneNumber)
+                </th>
+                <th class="field">
+                    @Html.TextBoxFor(m => m.PhoneNumber, new { @type = "text" })
+                </th>
+            </tr>
+            <tr>
+                <th class="label">
+                    @Html.LabelFor(m => m.EventDate)
+                </th>
+                <th class="field">
+                    @Html.TextBoxFor(m => m.EventDate, new { @type = "datetime" })
+                </th>
+            </tr>
+            <tr>
+                <th class="label">
+                    @Html.LabelFor(m => m.BrideFirstName)
+                </th>
+                <th class="field">
+                    @Html.TextBoxFor(m => m.BrideFirstName, new { @type = "text" })
+                </th>
+            </tr>
+            <tr>
+                <th class="label">
+                    @Html.LabelFor(m => m.BrideLastName)
+                </th>
+                <th class="field">
+                    @Html.TextBoxFor(m => m.BrideLastName, new { @type = "text" })
+                </th>
+            </tr>
+            <tr>
+                <th class="label">
+                    @Html.LabelFor(m => m.GroomFirstName)
+                </th>
+                <th class="field">
+                    @Html.TextBoxFor(m => m.GroomFirstName, new { @type = "text" })
+                </th>
+            </tr>
+            <tr>
+                <th class="label">
+                    @Html.LabelFor(m => m.GroomLastName)
+                </th>
+                <th class="field">
+                    @Html.TextBoxFor(m => m.GroomLastName, new { @type = "text" })
+                </th>
+            </tr>
+            <tr>
+                <th class="label">
+                    @Html.LabelFor(m => m.CompanyName)
+                </th>
+                <th class="field">
+                    @Html.TextBoxFor(m => m.CompanyName, new { @type = "text" })
+                </th>
+            </tr>
+            <tr>
+                <th class="label">
+                    @Html.LabelFor(m => m.Description)
+                </th>
+                <th class="field">
+                    @Html.TextAreaFor(m => m.Description, new { @type = "text" })
+                </th>
+            </tr>
+        </table>
+        @*Html.ValidationSummary()*@
+    </div>
+}

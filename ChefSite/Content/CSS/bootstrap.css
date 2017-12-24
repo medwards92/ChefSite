@@ -3807,7 +3807,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   display: block;
 }
 
-.nav > li:hover {
+.nav > li:hover, .nav > li.active {
   background-color: #eeeeee;
 }
 

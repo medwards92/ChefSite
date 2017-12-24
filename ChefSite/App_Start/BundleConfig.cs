@@ -29,7 +29,8 @@ namespace ChefSite
                       "~/Content/CSS/Slideshow.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/accessories").Include(
-                      "~/Scripts/Slideshow.js"));
+                      "~/Scripts/Slideshow.js",
+                      "~/Scripts/Site.js"));
         }
     }
 }
