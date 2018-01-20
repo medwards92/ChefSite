@@ -4022,6 +4022,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   position: relative;
   z-index: 1000;
   min-height: 50px;
+  padding: 10px 0px;
+  clear: both;
 }
 
 .navbar:before,
