@@ -177,6 +177,8 @@
     <Content Include="Content\CSS\bootstrap.css" />
     <Content Include="Content\CSS\bootstrap.min.css" />
     <Content Include="Content\CSS\Slideshow.css" />
+    <Content Include="Content\Images\ChefRaoul_Logo_Black.png" />
+    <Content Include="Content\Images\ChefRaoul_Logo_White.png" />
     <Content Include="Content\Images\headerSlide1.jpg" />
     <Content Include="Content\Images\headerSlide2.jpg" />
     <Content Include="Content\Images\headerSlide3.jpg" />

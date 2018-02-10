@@ -17,11 +17,19 @@
     white-space: normal;
 }
 
+footer {
+    color: #eeeeee;
+}
+
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.logo {
+    text-align: center;
 }
 
 .galleryPage {
@@ -53,7 +61,7 @@ td.label {
 .contactInformation {
     float: left;
     width: 50%;
-    padding: 9em 2em;
+    padding: 8em 2em;
 }
 
 .divider {
@@ -70,4 +78,45 @@ td.label {
     padding: 2em;
 }
 
+.contactForm table {
+    line-height: 1;
+}
+
+.contactForm table tr td {
+    padding-bottom: 10px;
+}
+
+.contactForm table tr td #Comments {
+    min-height: 50px;
+    max-height: 120px;
+    min-width: 150px;
+}
+
+.button-wrapper {
+    float: right;
+    margin-top: 20px;
+}
+
+.contactFormResponse {
+    display: none;
+    float: right;
+    width: 50%;
+    padding: 2em;
+}
+
+.button {
+    background-color: #bbbbbb;
+    color: black;
+    border: 2px solid #333333;
+    border-radius: 10px;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    padding: 5px 20px;
+}
+
+.button:hover {
+    background-color: #333333;
+    color: #eeeeee;
+}
 /* END CONTACT PAGE */
