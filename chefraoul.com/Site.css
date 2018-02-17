@@ -1,0 +1,203 @@
+﻿body {
+    padding-bottom: 20px;
+    background-color: rgb(30, 30, 30);
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    /*background: linear-gradient(#eeeeee, rgba(60, 60, 60));*/
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+footer {
+    color: #eeeeee;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.galleryPage {
+    float: left;
+    overflow: hidden;
+}
+
+.galleryPhoto {
+    margin: 2px;
+    float: left;
+}
+
+.galleryPhoto > img {
+    height: 175px;
+}
+
+td.label {
+    text-align: right;
+    padding-right: 15px;
+}
+
+/* CONTACT PAGE */
+
+.dividerBox {
+    position: relative;
+    height: 25em;
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+  .dividerBox {
+    position: relative;
+    height: 30em;
+  }
+  
+  tr {
+    display: inline-grid;
+  }
+  
+  .contactForm table tr td.label {
+    text-align: left;
+	padding-bottom: 0;
+  }
+  
+  .contactForm table tr td.field {
+    padding-bottom: 10px;
+  }
+}
+
+
+@media (min-width: 500px) and (max-width: 767px) {
+  .divider {
+	  display: none;
+  }
+  
+  .dividerBox .contactInformation {
+	float: none;
+    width: auto;
+    padding: 0 0 1em 0;
+    text-align: center;
+  }
+  
+  .dividerBox .contactForm {
+	float: none;
+    width: auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: 499px) {
+  .divider {
+	  display: none;
+  }
+  
+  .dividerBox {
+	  height: auto;
+  }
+  
+  .dividerBox .contactInformation {
+	float: none;
+    width: auto;
+    padding: 0 0 1em 0;
+    text-align: center;
+  }
+  
+  .dividerBox .contactForm {
+	float: none;
+    width: auto;
+    padding: 0;
+	height: 28em;
+  }
+  
+  tr {
+    display: inline-grid;
+  }
+  
+  .contactForm table tr td.label {
+    text-align: left;
+	padding-bottom: 0;
+  }
+  
+  .contactForm table tr td.field {
+    padding-bottom: 10px;
+  }
+  
+  input, select, textarea {
+    max-width: 10em;
+  }
+}
+
+.contactInformation {
+    float: left;
+    width: 50%;
+    padding: 8em 2em;
+}
+
+.divider {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    bottom: 0%;
+    border-left: 2px solid rgb(30, 30, 30);
+}
+
+.contactForm {
+    float: right;
+    width: 50%;
+    padding: 2em;
+}
+
+.contactForm table {
+    line-height: 1;
+}
+
+.contactForm table tr td {
+    padding-bottom: 10px;
+}
+
+.contactForm table tr td #Comments {
+    min-height: 50px;
+    max-height: 120px;
+    min-width: 150px;
+}
+
+.button-wrapper {
+    float: right;
+    margin-top: 20px;
+}
+
+.contactFormResponse {
+    display: none;
+    float: right;
+    width: 50%;
+    padding: 2em;
+}
+
+.button {
+    background-color: #bbbbbb;
+    color: black;
+    border: 2px solid #333333;
+    border-radius: 10px;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    padding: 5px 20px;
+}
+
+.button:hover {
+    background-color: #333333;
+    color: #eeeeee;
+}
+/* END CONTACT PAGE */

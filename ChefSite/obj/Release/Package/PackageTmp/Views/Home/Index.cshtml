@@ -1,0 +1,104 @@
+﻿@model  ChefSite.Models.ContactViewModel
+
+<div class="jumbotron contactPage">
+    <center>Our website is under construction. Feel free to contact us below!</center>
+    <br />
+    <div class="dividerBox">
+        <div class="contactInformation">
+            <div class="phoneNumber">Phone Number: 713-870-2838</div>
+            <div class="email">Email: chef@chefraoul.com</div>
+        </div>
+        <div class="divider"></div>
+        <form class="contactForm" action="/Home/SendContact">
+            <center><h3>Please contact us with the form below.</h3></center>
+            @Html.ValidationSummary()
+            <table>
+                <tr>
+                    <td class="label">
+                        @Html.LabelFor(m => m.FullName)
+                    </td>
+                    <td class="field">
+                        @Html.TextBoxFor(m => m.FullName, new { @type = "text", required = "required" })
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        @Html.LabelFor(m => m.PhoneNumber)
+                    </td>
+                    <td class="field">
+                        @Html.TextBoxFor(m => m.PhoneNumber, new { @type = "phone", required = "required" })
+                        @Html.ValidationMessageFor(model => model.PhoneNumber)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        @Html.LabelFor(m => m.EmailAddress)
+                    </td>
+                    <td class="field">
+                        @Html.TextBoxFor(m => m.EmailAddress, new { @type = "email", required = "required" })
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        @Html.LabelFor(m => m.EventType)
+                    </td>
+                    <td class="field">
+                        @Html.TextBoxFor(m => m.EventType, new { @type = "text" })
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        @Html.LabelFor(m => m.EventDate)
+                    </td>
+                    <td class="field">
+                        @Html.EditorFor(m => m.EventDate, new { @type = "datetime", required = "required" })
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        @Html.LabelFor(m => m.Comments)
+                    </td>
+                    <td class="field">
+                        @Html.TextAreaFor(m => m.Comments, new { @type = "text" })
+                    </td>
+                </tr>
+            </table>
+            <div class="button-wrapper">
+                <input type="submit" value="Send" class="button sendContactForm">
+            </div>
+        </form>
+        <div class="contactFormResponse">
+            <center>Thank you for contacting us!</center>
+        </div>
+    </div>
+</div>
+
+
+
+@*<div class="jumbotron indexPage">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Getting started</h2>
+            <p>
+                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+                enables a clean separation of concerns and gives you full control over markup
+                for enjoyable, agile development.
+            </p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Get more libraries</h2>
+            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        </div>
+    </div>
+</div>*@

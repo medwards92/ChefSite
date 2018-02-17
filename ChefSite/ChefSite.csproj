@@ -34,6 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <IncludeIisSettings>true</IncludeIisSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -179,34 +180,13 @@
     <Content Include="Content\CSS\Slideshow.css" />
     <Content Include="Content\Images\ChefRaoul_Logo_Black.png" />
     <Content Include="Content\Images\ChefRaoul_Logo_White.png" />
-    <Content Include="Content\Images\headerSlide1.jpg" />
-    <Content Include="Content\Images\headerSlide2.jpg" />
-    <Content Include="Content\Images\headerSlide3.jpg" />
-    <Content Include="Content\Images\headerSlide4.jpg" />
-    <Content Include="Content\Images\headerSlide5.jpg" />
-    <Content Include="Content\Images\headerSlide6.jpg" />
-    <Content Include="Content\Images\wall1.jpg" />
-    <Content Include="Content\Images\wall10.jpg" />
-    <Content Include="Content\Images\wall11.jpg" />
-    <Content Include="Content\Images\wall12.jpg" />
-    <Content Include="Content\Images\wall13.jpg" />
-    <Content Include="Content\Images\wall14.png" />
-    <Content Include="Content\Images\wall15.jpg" />
-    <Content Include="Content\Images\wall16.jpg" />
-    <Content Include="Content\Images\wall2.jpg" />
-    <Content Include="Content\Images\wall3.jpg" />
-    <Content Include="Content\Images\wall4.jpg" />
-    <Content Include="Content\Images\wall5.jpg" />
-    <Content Include="Content\Images\wall6.jpg" />
-    <Content Include="Content\Images\wall7.jpg" />
-    <Content Include="Content\Images\wall8.jpg" />
-    <Content Include="Content\Images\wall9.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\CSS\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\ChefSite.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -265,7 +245,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>53824</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:53824/</IISUrl>
+          <IISUrl>http://localhost:53824</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

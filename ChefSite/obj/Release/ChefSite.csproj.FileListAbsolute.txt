@@ -66,3 +66,4 @@ C:\SVNViews\Chef Site\trunk\ChefSite\bin\Microsoft.Owin.Security.Twitter.xml
 C:\SVNViews\Chef Site\trunk\ChefSite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\SVNViews\Chef Site\trunk\ChefSite\obj\Release\ChefSite.dll
 C:\SVNViews\Chef Site\trunk\ChefSite\obj\Release\ChefSite.pdb
+C:\SVNViews\Chef Site\trunk\ChefSite\obj\Release\ChefSite.csprojResolveAssemblyReference.cache
