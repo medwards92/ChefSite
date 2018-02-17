@@ -137,6 +137,10 @@ td.label {
   input, select, textarea {
     max-width: 10em;
   }
+  
+  .logo img {
+	  width: 100%;
+  }
 }
 
 .contactInformation {
