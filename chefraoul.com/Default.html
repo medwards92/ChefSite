@@ -2,7 +2,7 @@
 <html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Tasteful Event</title>
+    <title>Chef Raoul Catering</title>
     <link href="bootstrap.css" rel="stylesheet">
 <link href="Site.css" rel="stylesheet">
 
@@ -11,89 +11,59 @@
 
 </head>
 <body>
-    <div class="logo">
-        <img src="ChefRaoul_Logo_White.png">
-    </div>
-    
+	<div class="page-header">
+		<div class="logo">
+			<img src="ChefRaoul_Logo_White.png">
+		</div>
+		<div class="navbar">
+			<div class="container">
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="menuIndex active"><a href="Default.html">Home</a></li>
+						<li class="menuMenus"><a href="Menus.html">Sample Menus</a></li>
+						<li class="menuGallery"><a href="Gallery.html">Gallery</a></li>
+						<!--<li class="menuRecommendations"><a href="Recommendations.html">Our Recommendations</a></li>-->
+						<li class="menuContact"><a href="Contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
     <div class="container body-content">
         
-<div class="jumbotron contactPage">
-    <center>Our website is under construction. Feel free to contact us below!</center>
-    <br>
-    <div class="dividerBox">
-        <div class="contactInformation">
-            <div class="phoneNumber">Phone Number: 713-870-2838</div>
-            <div class="email">Email: chef@chefraoul.com</div>
+<div class="jumbotron indexPage">
+
+	About Us content here.
+	
+	Our Services content here.
+	
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more »</a></p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Getting started</h2>
+            <p>
+                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+                enables a clean separation of concerns and gives you full control over markup
+                for enjoyable, agile development.
+            </p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more »</a></p>
         </div>
-        <div class="divider"></div>
-        <form class="contactForm" action="/Home/SendContact">
-            <center><h3>Please contact us with the form below.</h3></center>
-            <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
-</ul></div>
-            <table>
-                <tbody><tr>
-                    <td class="label">
-                        <label for="FullName">Name</label>
-                    </td>
-                    <td class="field">
-                        <input id="FullName" name="FullName" required="required" value="" type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="label">
-                        <label for="PhoneNumber">Phone Number</label>
-                    </td>
-                    <td class="field">
-                        <input data-val="true" data-val-regex="Entered phone format is not valid." data-val-regex-pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" id="PhoneNumber" name="PhoneNumber" required="required" value="" type="phone">
-                        <span class="field-validation-valid" data-valmsg-for="PhoneNumber" data-valmsg-replace="true"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="label">
-                        <label for="EmailAddress">Email</label>
-                    </td>
-                    <td class="field">
-                        <input id="EmailAddress" name="EmailAddress" required="required" value="" type="email">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="label">
-                        <label for="EventType">Type of Event</label>
-                    </td>
-                    <td class="field">
-                        <input id="EventType" name="EventType" value="" type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="label">
-                        <label for="EventDate">Event Date</label>
-                    </td>
-                    <td class="field">
-                        <input class="text-box single-line" data-val="true" data-val-date="The field Event Date must be a date." data-val-required="The Event Date field is required." id="EventDate" name="EventDate" value="" type="date">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="label">
-                        <label for="Comments">Comments</label>
-                    </td>
-                    <td class="field">
-                        <textarea cols="20" id="Comments" name="Comments" rows="2" type="text"></textarea>
-                    </td>
-                </tr>
-            </tbody></table>
-            <div class="button-wrapper">
-                <input value="Send" class="button sendContactForm" type="submit">
-            </div>
-        </form>
-        <div class="contactFormResponse">
-            <center>Thank you for contacting us!</center>
+        <div class="col-md-4">
+            <h2>Get more libraries</h2>
+            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more »</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more »</a></p>
         </div>
     </div>
 </div>
-
-
-
-
         <hr>
         <footer>
             <p>© 2018 - Chef Raoul</p>

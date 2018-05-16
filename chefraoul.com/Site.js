@@ -35,4 +35,14 @@ $(function ($) {
 			contactResponse.show();
         }
     });
+	
+	$('.menuItem').on('click', function () {
+		$('.modal-dialog').show();
+		$('.modal-backdrop').show();
+	});
+	
+	$('.modal-backdrop').on('click', function () {
+		$('.modal-dialog').hide();
+		$('.modal-backdrop').hide();
+	});
 }, jQuery);

@@ -30,11 +30,8 @@ textarea {
 
 .logo {
     text-align: center;
-}
-
-.galleryPage {
-    float: left;
-    overflow: hidden;
+	float: left;
+	width: 50%;
 }
 
 .galleryPhoto {
@@ -50,6 +47,57 @@ td.label {
     text-align: right;
     padding-right: 15px;
 }
+
+/* MENU PAGE */
+
+.disclaimer {
+	font-size: 18px;
+	text-align: center;
+	padding: 5px;
+}
+
+.menuLevel {
+	text-align: center;
+	font-size: 26px;
+	padding-bottom: 10px;;
+}
+
+.menuGroup {
+	display: flex;
+	border: black solid 1px;
+	padding: 3em;
+	margin-bottom: 2em;
+}
+
+.menuItem {
+	width: 33%;
+	text-align: center;
+	background: silver;
+	padding: 10px;
+	margin: 0 2em;
+	border-radius: 10px;
+	box-shadow: 5px 5px rgb(33, 33, 33, 0.7);
+}
+
+.menuItem:hover {
+	background-color: rgb(192,192,192, 0.5);
+	cursor: pointer;
+}
+
+.additionalServices {
+	padding: 5px 0;
+}
+
+.additionalServices .title {
+	font-size: 20px;
+}
+
+.additionalServices .services {
+	font-size: 16;
+	margin-left: 2em;
+}
+
+/* END MENU PAGE */
 
 /* CONTACT PAGE */
 
@@ -77,7 +125,6 @@ td.label {
     padding-bottom: 10px;
   }
 }
-
 
 @media (min-width: 500px) and (max-width: 767px) {
   .divider {

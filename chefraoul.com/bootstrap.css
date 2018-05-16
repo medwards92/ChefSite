@@ -549,9 +549,8 @@ h4 small,
 }
 
 .page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
-  border-bottom: 1px solid #eeeeee;
+  margin-top: 40px;
+  height: 10em;
 }
 
 ul,
@@ -4019,11 +4018,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar {
-  position: relative;
   z-index: 1000;
   min-height: 50px;
-  padding: 10px 0px;
-  clear: both;
+  padding-top: 10px;
+  float: right;
+  width: 50%;
 }
 
 .navbar:before,
@@ -4047,7 +4046,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar > .container {
-    width: 600px;
+    width: 650px;
 }
  
 @media (min-width: 768px) {
@@ -4084,8 +4083,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-collapse {
   max-height: 340px;
-  padding-right: 15px;
-  padding-left: 15px;
   overflow-x: visible;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -4274,11 +4271,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
     float: left;
     margin: 0;
     background-color: silver;
-    padding: 0px 70px;
+    padding: 0px 20px;
   }
   .navbar-nav > li {
     float: left;
-    padding: 0px 30px;
   }
 }
 
@@ -5634,6 +5630,8 @@ body.modal-open,
   padding: 10px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 15em;
+  background-color: #eeeeee;
 }
 
 .modal-content {
@@ -5655,7 +5653,8 @@ body.modal-open,
   bottom: 0;
   left: 0;
   z-index: 1030;
-  background-color: #000000;
+  background-color: rgb(30, 30, 30, 0.6);
+  display: none;
 }
 
 .modal-backdrop.fade {
