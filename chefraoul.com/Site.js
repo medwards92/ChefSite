@@ -45,4 +45,8 @@ $(function ($) {
 		$('.modal-dialog').hide();
 		$('.modal-backdrop').hide();
 	});
+	
+	$('.modal-dialog').on('click', function (e) {
+		e.stopPropagation();
+	});
 }, jQuery);

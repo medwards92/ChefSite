@@ -5620,7 +5620,7 @@ body.modal-open,
   padding: 10px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 15em;
+  margin-top: 6em;
   background-color: #eeeeee;
 }
 
@@ -5721,7 +5721,8 @@ body.modal-open,
   .modal-dialog {
     right: auto;
     left: 50%;
-    width: 600px;
+    width: 60%;
+	height: 75%;
     padding-top: 30px;
     padding-bottom: 30px;
   }

@@ -37,6 +37,14 @@ textarea {
 	float: left;
 }
 
+/* HOME PAGE */
+
+.profileImage > img {
+	width: 100%
+}
+
+/* END HOME PAGE */
+
 .galleryPhoto {
     margin: 2px;
     float: left;
@@ -85,6 +93,11 @@ td.label {
 .menuItem:hover {
 	background-color: rgb(192,192,192, 0.5);
 	cursor: pointer;
+}
+
+.modal-dialog > embed {
+	width: 100%;
+	height: calc(68vh);
 }
 
 .additionalServices {
