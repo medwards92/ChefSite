@@ -550,7 +550,6 @@ h4 small,
 
 .page-header {
   margin-top: 40px;
-  height: 10em;
 }
 
 ul,
@@ -4018,11 +4017,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   z-index: 1000;
   min-height: 50px;
-  padding-top: 10px;
-  float: right;
-  width: 50%;
 }
 
 .navbar:before,
@@ -4043,10 +4042,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar:after {
   clear: both;
-}
-
-.navbar > .container {
-    width: 650px;
 }
  
 @media (min-width: 768px) {
@@ -4235,10 +4230,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 
-.navbar-nav {
-  margin: 7.5px -15px;
-}
-
 .navbar-nav > li > a {
   line-height: 20px;
 }
@@ -4268,8 +4259,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 @media (min-width: 768px) {
   .navbar-nav {
-    float: left;
-    margin: 0;
+    float: right;
     background-color: silver;
     padding: 0px 20px;
   }
