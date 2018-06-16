@@ -20,9 +20,9 @@ $(function ($) {
 
         if (valid) {
 			var emailSubject = 'Contact Request - ' + fullName;
-            var emailBody = 'PhoneNumber: ' + phoneNumber
-                + 'EventType: ' + eventType
-                + 'EVentDate: ' + eventDate
+            var emailBody = 'Phone Number: ' + phoneNumber + '\r\n'
+                + 'Event Type: ' + eventType + '\r\n'
+                + 'Event Date: ' + eventDate + '\r\n'
                 + 'Comments: ' + comments;
 
 			Email.send(emailAddress,

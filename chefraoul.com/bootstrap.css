@@ -4258,14 +4258,15 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 @media (min-width: 768px) {
-  .navbar-nav {
-    float: right;
-    background-color: silver;
-    padding: 0px 20px;
-  }
   .navbar-nav > li {
     float: left;
   }
+}
+
+.navbar-nav {
+  float: right;
+  background-color: silver;
+  padding: 0px 20px;
 }
 
 @media (min-width: 768px) {
