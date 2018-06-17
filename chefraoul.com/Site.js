@@ -36,12 +36,17 @@ $(function ($) {
         }
     });
 	
-	$('.menuItem').on('click', function (e) {
+	$('.menuItem').on('click', function (e) {		
 		var fileName = $(e.currentTarget).data('menuName'),
 			fileSrc = 'Menus\\' + fileName + '.pdf#toolbar=0&navpanes=0&statusbar=0&view=auto';
-		$('.modal-dialog > embed').attr('src', fileSrc);
-		$('.modal-dialog').show();
-		$('.modal-backdrop').show();
+				
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			window.open(fileSrc, '_blank');
+		} else {
+			$('.modal-dialog > embed').attr('src', fileSrc);
+			$('.modal-dialog').show();
+			$('.modal-backdrop').show();
+		}
 	});
 	
 	$('.modal-backdrop').on('click', function () {
