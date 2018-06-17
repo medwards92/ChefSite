@@ -41,9 +41,11 @@ $(function ($) {
 			fileSrc = 'Menus\\' + fileName + '.pdf#toolbar=0&navpanes=0&statusbar=0&view=auto';
 				
 		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			$('.modal-dialog > object a').attr('href', fileSrc);
 			window.open(fileSrc, '_blank');
 		} else {
-			$('.modal-dialog > embed').attr('src', fileSrc);
+			$('.modal-dialog > object').attr('data', fileSrc);
+			$('.modal-dialog > object a').attr('href', fileSrc);
 			$('.modal-dialog').show();
 			$('.modal-backdrop').show();
 		}

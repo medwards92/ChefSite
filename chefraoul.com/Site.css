@@ -56,8 +56,13 @@ textarea {
 }
 
 /* HOME PAGE */
+li {
+	line-height: initial;
+}
+
 .profileImage > img {
-	width: 100%
+	width: 100%;
+	margin: 4em 0;
 }
 
 .btnTransition {
@@ -80,16 +85,27 @@ textarea {
 	cursor: pointer;
 }
 
+@media (min-width: 980px) and (max-width: 1199px) {
+	.profileImage > img {
+		margin: 10em 0;
+	}
+}
+
 @media (min-width: 500px) and (max-width: 980px) {
 	.col-md-4.profileImage {
 		width: 50%;
 		float: left;
+	}
+	
+	.profileImage > img {
+		margin: auto;
 	}
 }
 
 @media (max-width: 499px) {
 	.profileImage > img {
 		width: 100%;
+		margin: auto;
 	}
 }
 /* END HOME PAGE */
@@ -155,7 +171,7 @@ textarea {
 	cursor: pointer;
 }
 
-.modal-dialog > embed {
+.modal-dialog > object {
 	width: 100%;
 	height: calc(68vh);
 }
