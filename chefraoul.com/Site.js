@@ -51,7 +51,33 @@ $(function ($) {
 		}
 	});
 	
+	$('.galleryPage img').on('click', function (e) {
+		if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			return false;
+		}
+		
+		var image = $(e.currentTarget),
+			modal = $('.modal-dialog img'),
+			imgSrc = image.attr('src');
+		
+		$('.modal-dialog img').attr('src', imgSrc);
+		$('.modal-dialog').show();
+		$('.modal-backdrop').show();
+		
+		if (window.innerWidth < 1200) {
+			if ($(modal).width() > $(modal).height()) { modal.css({width: '100%', height: 'auto'}); }
+			else if ($(modal).width() < $(modal).height()) { modal.css({width: 'auto', height: '100%'}); }
+		}
+		
+		$($('.modal-dialog img')).height()
+	});
+	
 	$('.modal-backdrop').on('click', function () {
+		$('.modal-dialog').hide();
+		$('.modal-backdrop').hide();
+	});
+	
+	$('.closeBtn').on('click', function () {
 		$('.modal-dialog').hide();
 		$('.modal-backdrop').hide();
 	});

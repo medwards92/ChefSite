@@ -37,6 +37,27 @@ textarea {
 	float: left;
 }
 
+.modal-dialog {
+	text-align: center;
+}
+
+.modal-dialog > object {
+	width: 100%;
+	height: calc(68vh);
+}
+
+.modal-dialog > img {
+	height: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.closeBtn {
+    float: right;
+    padding: 5px;
+	cursor: pointer;
+}
+
 @media (max-width: 980px) {
 	.logo {
 		float: none;
@@ -136,6 +157,7 @@ li {
 	width: 100%;
 	margin: 5px 0;
 	vertical-align: middle;
+	cursor: pointer;
 }
 
 @media (max-width: 499px) {
@@ -184,11 +206,6 @@ li {
 .menuItem:hover {
 	background-color: rgb(192,192,192, 0.5);
 	cursor: pointer;
-}
-
-.modal-dialog > object {
-	width: 100%;
-	height: calc(68vh);
 }
 
 .additionalServices {
